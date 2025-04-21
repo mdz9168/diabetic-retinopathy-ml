@@ -54,9 +54,9 @@ Random Forest | ~66% | 30 estimators, no tuning
 This project is licensed under the MIT License.
 See LICENSE for full text.
 
-## About the Author
-Made by Moses Lian
+---
 
-https://www.linkedin.com/in/moses-lian/
-https://github.com/mdz9168
+🙋‍♂️ **About the Author**
 
+Made by **Moses Lian**
+🔗 [LinkedIn](https://www.linkedin.com/in/moses-lian/) • 🌐 [GitHub](https://github.com/mdz9168)

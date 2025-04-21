@@ -1,7 +1,7 @@
 from sklearn.linear_model import LogisticRegression
-from sklearn.ensemble import AdaBoostClassifier
+from sklearn.ensemble import AdaBoostClassifier, RandomForestClassifier
 from sklearn.model_selection import GridSearchCV
-
+import pandas as pd
 
 def train_logistic_regression(X_train, y_train):
     """
@@ -50,3 +50,35 @@ def train_adaboost_classifier(X_train, y_train):
 
     print("Best AdaBoost Parameters:", grid_search.best_params_)
     return best_model
+
+def train_random_forest_classifier(X_train, y_train, n_estimators=30, random_state=42):
+    """
+    this trains a Random Forest classifier.
+
+    Parameters:
+    - X_train: training features
+    - y_train: training labels
+    - n_estimators: number of trees in the forest
+
+    Returns:
+    - Trained RandomForestClassifier model
+    """
+    model = RandomForestClassifier(n_estimators=n_estimators, random_state=random_state)
+    model.fit(X_train, y_train)
+    return model
+
+def save_feature_importance(model, feature_names, save_path):
+    """
+    this saves feature importances to a CSV.
+
+    Parameters:
+    - model: trained model with feature_importances_
+    - feature_names: list of feature names
+    - save_path: file path to save the CSV
+    """
+    importance = model.feature_importances_
+    df = pd.DataFrame({
+        'Feature': feature_names,
+        'Importance': importance
+    }).sort_values(by='Importance', ascending=False)
+    df.to_csv(save_path, index=False)

@@ -36,7 +36,7 @@ diabetic-retinopathy-ml/ ├── main.py # Pipeline script: runs all models �
 
 1. Clone this repo:
 ```bash
-git clone https://github.com/YOUR_USERNAME/diabetic-retinopathy-ml.git
+git clone https://github.com/mdz9168/diabetic-retinopathy-ml.git
 cd diabetic-retinopathy-ml
 
 python -m venv venv
@@ -47,16 +47,22 @@ pip install -r requirements.txt
 python main.py
 
 Model | Accuracy | Notes
-Logistic Regression | ~65% | Linear baseline
-AdaBoost | ~70% | Tuned with GridSearchCV
-Random Forest | ~66% | 30 estimators, no tuning
+---|---|---
+Logistic Regression | ~65% | Linear baseline  
+AdaBoost | ~70% | Tuned with GridSearchCV  
+Random Forest | ~66% | 30 estimators, no tuning  
 
-This project is licensed under the MIT License.
+This project is licensed under the MIT License.  
 See LICENSE for full text.
+
 
 ---
 
-🙋‍♂️ **About the Author**
+## 👤 About the Author
 
-Made by **Moses Lian**
-🔗 [LinkedIn](https://www.linkedin.com/in/moses-lian/) • 🌐 [GitHub](https://github.com/mdz9168)
+Hi! I'm **Moses Lian**, a data science & machine learning enthusiast.  
+This project reflects my passion for applying ML in healthcare and real-world diagnostics.
+
+- 🔗 [LinkedIn](https://www.linkedin.com/in/moses-lian/)
+- 🐙 [GitHub](https://github.com/mdz9168)
+
